@@ -4,7 +4,7 @@ import (
     "fmt"
 )
 
-func Example_NewBuf() {
+func ExampleNewBuf() {
     buf := NewBuf()
     fmt.Printf("Bufer Size: %v\n", size)
     fmt.Printf("Bufer Index: %v\n", buf.index)
@@ -18,7 +18,7 @@ func Example_NewBuf() {
     // Bufer Get Index: 1
 }
 
-func ExampleAdd() {
+func ExampleBuf_Add() {
     buf := NewBuf()
     buf.Add(35)
     fmt.Printf("Bufer[0] is %v\n", 35)
@@ -33,7 +33,7 @@ func ExampleAdd() {
     // Bufer Get Index: 1
 }
 
-func ExampleGet() {
+func ExampleBuf_Get() {
     buf := NewBuf()
     buf.Add(35)
     buf.Add(100)
